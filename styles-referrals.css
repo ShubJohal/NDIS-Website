@@ -1,0 +1,80 @@
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #f8f9fa;
+}
+
+.navbar-brand img {
+    width: 60px;
+    height: 60px;
+}
+
+.navbar-brand-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    background: linear-gradient(to right, #feb47b, #8e44ad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-section-referrals {
+    background: url('D:/NDIS Web/images/referrals-bg.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+}
+
+.referral-form-section {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.referral-form .form-control {
+    border-radius: 10px;
+}
+
+.referral-form .btn {
+    background-color: #8e44ad;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+}
+
+.referral-form .btn:hover {
+    background-color: #feb47b;
+}
+
+.footer {
+    background-color: #ff7e5f;
+    color: #fff;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer a:hover {
+    text-decoration: none;
+}

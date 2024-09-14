@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Referral - For You For Life</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles-referrals.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="images/icon_transparent.png" alt="Logo" width="60" height="60" class="d-inline-block align-top mr-2">
+                <span class="navbar-brand-text gradient-text">For You For Life</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="our-services.html">Our Services</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="referrals.html">Referrals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section-referrals">
+        <div class="hero-overlay"></div>
+        <div class="container text-center text-white hero-text">
+            <h1 class="display-4">Make a Referral</h1>
+            <p class="lead">Fill out the form below to refer someone who needs our services.</p>
+        </div>
+    </section>
+
+    <!-- Referral Form Section -->
+    <section class="referral-form-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Referral Form</h2>
+            <form action="/submit-referral" method="POST" class="referral-form">
+                <!-- Section 1: Participant Details -->
+                <h4>Participant Details</h4>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="firstName">First Name *</label>
+                        <input type="text" class="form-control" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="lastName">Last Name *</label>
+                        <input type="text" class="form-control" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="dob">DOB *</label>
+                        <input type="date" class="form-control" id="dob" name="dob" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="gender">Gender *</label>
+                        <select class="form-control" id="gender" name="gender" required>
+                            <option value="">Select Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="street">Street *</label>
+                        <input type="text" class="form-control" id="street" name="street" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="suburb">Suburb *</label>
+                        <input type="text" class="form-control" id="suburb" name="suburb" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="state">State *</label>
+                        <select class="form-control" id="state" name="state" required>
+                            <option value="VIC">VIC</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="postcode">Postcode *</label>
+                        <input type="text" class="form-control" id="postcode" name="postcode" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="contactInfo">Contact phone number, Name and relationship to person (if not the person being referred) *</label>
+                    <input type="text" class="form-control" id="contactInfo" name="contactInfo" required>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="planStart">Plan Start Date *</label>
+                        <input type="date" class="form-control" id="planStart" name="planStart" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="planEnd">Plan End Date *</label>
+                        <input type="date" class="form-control" id="planEnd" name="planEnd" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="strengths">The person’s strengths, interests, talents and what they love *</label>
+                    <textarea class="form-control" id="strengths" name="strengths" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="livingArrangements">Living arrangements *</label>
+                    <textarea class="form-control" id="livingArrangements" name="livingArrangements" rows="3" required></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="ndisNumber">NDIS Number *</label>
+                        <input type="text" class="form-control" id="ndisNumber" name="ndisNumber" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="primaryDisability">Primary Disability *</label>
+                        <input type="text" class="form-control" id="primaryDisability" name="primaryDisability" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="secondaryDisabilities">Secondary Disabilities</label>
+                    <textarea class="form-control" id="secondaryDisabilities" name="secondaryDisabilities" rows="2"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="communication">How does the person communicate? *</label>
+                    <textarea class="form-control" id="communication" name="communication" rows="2" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="fundingAllocated">Funding allocated for service and type *</label>
+                    <textarea class="form-control" id="fundingAllocated" name="fundingAllocated" rows="2" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="fundingHours">Hours / $ amount allocated *</label>
+                    <input type="text" class="form-control" id="fundingHours" name="fundingHours" required>
+                </div>
+                <div class="form-group">
+                    <label for="fundingArrangement">Funding arrangement *</label>
+                    <select class="form-control" id="fundingArrangement" name="fundingArrangement" required>
+                        <option value="Self-managed">Self-managed</option>
+                        <option value="Agency managed">Agency managed</option>
+                        <option value="Plan Managed">Plan Managed</option>
+                        <option value="Plan Managed through another provider">Plan Managed through another provider</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="invoiceDetails">For plan and self-funded plans, where are the invoices to be sent to? *</label>
+                    <textarea class="form-control" id="invoiceDetails" name="invoiceDetails" rows="2" required></textarea>
+                </div>
+
+                <!-- Section 2: Behaviour and Cultural Considerations -->
+                <h4>Behavioural and Cultural Considerations</h4>
+                <div class="form-group">
+                    <label for="referralReason">Reason for referral *</label>
+                    <textarea class="form-control" id="referralReason" name="referralReason" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="behavioursOfConcern">Behaviours of concern *</label>
+                    <textarea class="form-control" id="behavioursOfConcern" name="behavioursOfConcern" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="culturalConsiderations">Cultural considerations</label>
+                    <textarea class="form-control" id="culturalConsiderations" name="culturalConsiderations" rows="2"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="currentInvolvement">Who is currently involved? *</label>
+                    <textarea class="form-control" id="currentInvolvement" name="currentInvolvement" rows="2" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="previousInterventions">List previous interventions/assessments *</label>
+                    <textarea class="form-control" id="previousInterventions" name="previousInterventions" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="serviceRequest">Service request *</label>
+                    <textarea class="form-control" id="serviceRequest" name="serviceRequest" rows="2" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="safetyConcerns">Safety concerns towards self/others? *</label>
+                    <textarea class="form-control" id="safetyConcerns" name="safetyConcerns" rows="2" required></textarea>
+                </div>
+
+                <!-- Section 3: Referrer Details -->
+                <h4>Referrer Details</h4>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="referrerFirstName">First Name *</label>
+                        <input type="text" class="form-control" id="referrerFirstName" name="referrerFirstName" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="referrerLastName">Last Name *</label>
+                        <input type="text" class="form-control" id="referrerLastName" name="referrerLastName" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="referrerRole">Role *</label>
+                        <input type="text" class="form-control" id="referrerRole" name="referrerRole" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="referrerOrganisation">Organisation</label>
+                        <input type="text" class="form-control" id="referrerOrganisation" name="referrerOrganisation">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="referrerEmail">Email *</label>
+                        <input type="email" class="form-control" id="referrerEmail" name="referrerEmail" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="referrerPhone">Phone *</label>
+                        <input type="tel" class="form-control" id="referrerPhone" name="referrerPhone" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="referralDate">Date *</label>
+                    <input type="date" class="form-control" id="referralDate" name="referralDate" required>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="text-center mt-4">
+                    <button type="submit" class="btn btn-primary">Submit Referral</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary py-4 text-white text-center">
+        <div class="container">
+            <p class="m-0">© 2024 For You For Life. All rights reserved.</p>
+            <a href="#" class="text-white">Privacy Policy</a> | <a href="#" class="text-white">Terms of Service</a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

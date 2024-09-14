@@ -1,0 +1,90 @@
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #f8f9fa;
+}
+
+.navbar-brand img {
+    width: 60px;
+    height: 60px;
+}
+
+.navbar-brand-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    background: linear-gradient(to right, #feb47b, #8e44ad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-section-about {
+    background: url('D:/NDIS Web/images/hero-bg.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.section-title {
+    color: #8e44ad;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.mission-section, .values-section, .team-section, .services-section {
+    padding: 60px 0;
+}
+
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+.about-us-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cta-section {
+    background: linear-gradient(to right, #8e44ad, #feb47b);
+    color: #fff;
+    padding: 60px 0;
+}
+
+footer {
+    background-color: #ff7e5f; /* Footer color similar to the logo */
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer a:hover {
+    text-decoration: none;
+}

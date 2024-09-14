@@ -1,0 +1,114 @@
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #f8f9fa;
+    
+}
+
+.navbar-brand img {
+    width: 60px;
+    height: 60px;
+}
+
+.navbar-brand-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    background: linear-gradient(to right, #feb47b, #8e44ad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-section {
+    background: linear-gradient(to right, #feb47b, #8e44ad);
+    padding: 100px 0;
+    color: #fff;
+    position: relative;
+}
+
+.hero-container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-section .btn-primary {
+    background-color: #ff7e5f;
+    border-color: #ff7e5f;
+}
+
+.section-title {
+    color: #ff7e5f;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.about-us-section {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+.about-us-section .lead {
+    font-size: 1.25rem;
+    margin-bottom: 40px;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-title {
+    color: #8e44ad;
+    font-weight: 600;
+}
+
+.about-us-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px 15px 0 0;
+}
+
+.parallax-section {
+    position: relative;
+    background: linear-gradient(to right, #8e44ad, #feb47b);
+    color: #fff;
+}
+
+.parallax-bg {
+    background: url('your-image-path.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.parallax-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+footer {
+    background-color: #ff7e5f; /* Footer color similar to the logo */
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
